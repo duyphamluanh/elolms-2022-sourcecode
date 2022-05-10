@@ -1,0 +1,117 @@
+.block_elo_import_data .content .list li.listentry {
+    clear: both;
+}
+
+.block_elo_import_data .content .list li.listentry .user {
+    float: left;
+    position: relative;
+}
+
+.block_elo_import_data .content .list li.listentry .user .userpicture {
+    vertical-align: text-bottom;
+}
+
+.block_elo_import_data .content .list li.listentry .message,
+.block_elo_import_data .content .list li.listentry .uservisibility {
+    float: right;
+    margin-top: 3px;
+}
+
+.block_elo_import_data .content .info {
+    text-align: center;
+}
+
+/*Nhien elo 10_09_2019*/
+.block_elo_import_data .content .list li.listentry .usermail {
+    float: right;
+    margin-top: 3px;
+}
+.block_elo_import_data .content .list li.listentry .userlastaccess {
+    float: right;
+    margin-top: 3px;
+}
+
+.block_elo_import_data .content .userright .usermail,
+.block_elo_import_data .content .userright .userlastaccess {
+    float: unset;
+    padding-right: 15px;
+}
+
+.block_elo_import_data .content .userright {
+    float: right;
+    display: flex;
+}
+.eloloadinghide>#mail-to-user-sending {
+    display: none;
+}
+#mail-to-user-sending {
+    visibility: hidden;
+}
+
+@media screen and ( min-width: 500px){
+    .modal-dialog {
+        max-width: 800px !important;
+        top: 20%;
+    }
+}
+
+.modal-body {
+    word-wrap: break-word;
+}
+
+table.flexible th:first-child {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+div.group-berutype a {
+    margin-right: 5px;
+}
+/*Nhien elo 10_09_2019*/
+
+div.btneloreports, .boxcontents {
+    display: contents;
+}
+
+div.boxcontents.form-inline {
+    display: contents !important;
+}
+
+button.btneloreports {
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+button.btnberexporttoexcel {
+    border-radius: 5px;
+}
+
+button.btnberexporttoexcel .icon {
+    margin-right: unset;
+}
+
+div.g-action, div.g-titlepointeloreports {
+    text-align: center;
+}
+
+div.elo_reports_advanced_search .chosen-container {
+    margin-bottom: 10px;
+}
+
+.berhide {
+    display: none;
+}
+
+.berlength {
+    display: unset !important;
+    width: 75px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#elo_reports_datagird div.list {
+    overflow-x: auto;
+}
+#blocks-elo_reports_point-view-elo-card {
+    min-height: 23rem !important;
+}

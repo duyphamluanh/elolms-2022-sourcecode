@@ -1,0 +1,353 @@
+/* stylelint-disable */
+/*.format-eloflexsections .course-content ul.eloflexsections {
+    margin: 0;
+    padding: 0;
+} origin*/
+.format-eloflexsections .course-content ul.eloflexsections-level-2 {
+    /*margin-left: 9px;*/
+    /*margin-right: 17px;*/
+/*    padding: 0;*/
+}
+.format-eloflexsections .course-content ul.eloflexsections li.section {
+    list-style: none;
+    margin:3px 0 2px .5em;
+    padding-left:5px;
+    padding-right:0;
+}
+.course-content ul.eloflexsections li.movehere {list-style: none;margin:3px 0 2px 1em;}
+.dir-rtl.format-eloflexsections .course-content ul.eloflexsections li.section,
+.dir-rtl.course-content ul.eloflexsections li.movehere {margin:3px 1em 2px 0;}
+.format-eloflexsections .course-content ul.eloflexsections-level-0 > li.section {margin-left: 0;}
+.format-eloflexsections .course-content ul.eloflexsections-level-0 > li.movehere {margin-left: 0;}
+.format-eloflexsections .course-content ul.eloflexsections li.section.main {border:none;}
+.format-eloflexsections .course-content ul.eloflexsections-level-1 > li.section.main {
+    /*border: #d2d6de solid 1px;*/
+    margin-left:0;
+    padding-right:5px;
+}
+.eloflexsections.eloflexsections-level-1{
+    /*border: #d2d6de solid 1px;*/
+/*    padding-left: 0rem;
+    padding-right: 1rem;*/
+}
+/*.elosectiontitle-1:target {
+    padding-top: 80px !important;
+    margin-top: -80px !important; 11.12.2018
+}*/
+.eloflexsections eloflexsections-level-0 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+.format-eloflexsections .course-content ul.eloflexsections li.section .controls img {padding-left:0.3em;padding-right:0.3em}
+.format-eloflexsections .course-content ul.eloflexsections li.section .availabilityinfo {
+    padding-bottom: .5em;
+    padding-left: 1rem;
+    font-size: 14px;
+}
+.format-eloflexsections .course-content ul.eloflexsections li.section ul.section {
+    margin-left:10px;
+    margin-right:18px;
+/*    margin-top: 16px;*/
+}
+.eloflexsections .eloflexsections-level-3, .eloflexsections .eloflexsections-level-4, .eloflexsections .eloflexsections-level-5   {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.format-eloflexsections .course-content ul.eloflexsections li.section > .content > .summary {margin-left:0;padding-left:0.2em;}
+
+/* Overwrite bootstrapbase styles */
+.format-eloflexsections .course-content ul.eloflexsections .controls a.hide,
+.format-eloflexsections .course-content ul.eloflexsections .controls a.show {display:inline;}
+
+/* hidden section */
+.format-eloflexsections .course-content li.section.hidden > .content > h3.sectionname,
+.format-eloflexsections .course-content li.section.hidden > .content > h3.sectionname a,
+.format-eloflexsections .course-content li.section.hidden > .content > .summary,
+.format-eloflexsections .course-content li.section.hidden .addresourcemodchooser a,
+.format-eloflexsections .course-content li.section.hidden a.addsection {color:#AAAAAA;}
+
+/* add extra borders in editing mode */
+.format-eloflexsections.editing .course-content ul.eloflexsections li.section.main {
+    border: #DDDDDD solid 1px;
+    margin-bottom: 8rem;
+    border-radius: 4px;
+    padding-top: 15px;
+
+}
+
+.format-eloflexsections .course-content ul.eloflexsections li.section {
+    list-style: none;
+    margin: 3px 0 2px 0;
+    padding-left: 0px;
+    padding-right: 0;
+}
+.format-eloflexsections.editing .course-content ul.eloflexsections li.section.main#section-0 {border: none;}
+
+/* moving section */
+.format-eloflexsections .course-content ul.eloflexsections li.section.ismoving {background:#EEEEEE;}
+.format-eloflexsections .course-content ul.eloflexsections li.movehere > img {padding-left:5px;}
+.format-eloflexsections .course-content div.cancelmoving {
+    margin:3px;
+    padding:5px;
+    background:yellow;
+    border:1px solid black;
+    text-align:center;
+    position:fixed;
+    top:0;
+    right:0;
+}
+
+.format-eloflexsections .jumpmenu {text-align:center;}
+
+.format-eloflexsections .header.backto .backto-text {margin-left:10px;}
+.course-content ul.section {
+    /*background-color: #fff;*/
+    border-radius: 4px;
+}
+/**************************************** nhien elo flexiblepage********************************************/
+input[type='checkbox'].toggle{
+  display: none;
+}
+/*.eloflexsections-level-2 .lbl-toggle {
+    font-family: Arial,verdana, sans-serif;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: none;
+    text-align: left;
+    padding: 10px 5px;
+    color: #3f3f3f;
+    background: rgba(200, 236, 239, .2);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: all 0.25s ease-out;
+    margin-bottom: 0rem;
+    border:none;
+}*/
+
+/*.eloflexsections-level-2 .lbl-toggle:hover {
+  color: #3f3f3f;
+}
+.eloflexsections-level-3 .lbl-toggle {
+    font-family: Arial,verdana, sans-serif;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: none;
+    text-align: left;
+    padding: 10px 5px;
+    color: #3f3f3f;
+    background: rgba(200, 236, 239, .2);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: all 0.25s ease-out;
+    margin-bottom: 0rem;
+    border:none;
+}
+.eloflexsections-level-3 .lbl-toggle:hover {
+  color: #3f3f3f;
+}
+*/
+.lbl-toggle {
+  font-family: Arial,verdana, sans-serif;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: none;
+  text-align: left;
+  padding: 10px 5px;
+  color: #3f3f3f;
+  background: rgba(200, 236, 239, .2);
+  background: transparent;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  margin-bottom: 0rem;
+  border:none;
+}
+/*
+
+.lbl-toggle:hover {
+  color: #0066cc;
+}*/
+/*.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+  -moz-transition: transform .2s ease-out;
+  -webkit-transition: transform .2s ease-out;
+  -o-transition: transform .2s ease-out;
+}*/
+
+/*.collapsible-content .content-inner {
+  background: rgba(233, 236, 239, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+  z-index: 2;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100%;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}*/
+
+.eloflexsections-level-1 .taorachovui:before {
+    display: block;
+    font-family: "FontAwesome";
+    content: '\f0d7';
+    float: left;
+    padding: 10px 0;
+    vertical-align: middle;
+    font-size: 16px;
+    color : #0066cc;
+}
+.eloflexsections-level-2 .taorachovui:before {
+    color : #3f3f3f;
+}
+.taorachovui:hover{
+    color: #0066cc;
+}
+
+
+.taorachovui:before {
+    display: block;
+    font-family: "FontAwesome";
+    content: '\f0d7';
+    float: left;
+    padding: 10px 0;
+    display: block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.taorachovui.collapsed:before {
+    content: '\f0da';
+}
+
+
+.elosectiontitle-0  { 
+    display: block;
+    padding-left: 10px !important;
+    padding-right: 18px !important;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: none;
+    color: #0066cc;
+}
+.elosectiontitle-1  {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: none;
+    color: #0066cc;
+    padding-left: 10px;
+}
+.elosectiontitle-2  {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: none;
+    color: #3f3f3f;
+    padding-left: 10px;
+}
+.elosectiontitle-3 , .elosectiontitle-4 ,.elosectiontitle-5  {
+/*    display: inline-block;*/
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: none;    
+    color: #3f3f3f;
+    padding-left: 10px;
+}
+.elosectionsummary-0 p { 
+   
+    font-size: 14px;
+    text-transform: none;    
+    color: #3f3f3f;
+    padding-left: 2rem;
+}
+.elosectionsummary-1 p {
+    
+    font-size: 14px;
+    text-transform: none;
+    color: #3f3f3f;
+}
+.elosectionsummary-2 p {
+    
+    font-size: 14px;
+    text-transform: none;
+    color: #3f3f3f;
+    /*padding-left: 16px;*/
+}
+.elosectionsummary-3 p {
+    
+    font-size: 14px;
+    text-transform: none;
+    color: #3f3f3f;
+}
+.elosectionsummary-4 p {
+    
+    font-size: 14px;
+    text-transform: none;
+    color: #3f3f3f;
+}
+.elosectionsummary-5 p {
+    
+    font-size: 14px;
+    text-transform: none;
+    color: #3f3f3f;
+    padding-left: 1rem;
+}
+.elosectionsummary-1, .elosectionsummary-2, .elosectionsummary-3, .elosectionsummary-4, .elosectionsummary-5 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.eloflexsections.eloflexsections-level-1, eloflexsections eloflexsections-level-2 {
+    padding-left: 10px !important;
+    padding-right: 18px !important;
+}
+.format-eloflexsections .section-modchooser {
+     padding: 1rem 2rem 1rem 1rem !important;
+}
+.format-eloflexsections span.instancename {
+    font-size: 1.1em;
+}
+.format-eloflexsections .section .activity .contentafterlink {
+    margin-left: 2.8rem !important;
+}
+.format-eloflexsections .path-course-view .unread {
+    margin-left: 2.8rem !important;
+}
+.format-eloflexsections span.instancename {
+    font-size: 14px;
+}
+.format-eloflexsections img.activityicon {
+    height: 18px !important;
+    width: 18px !important;
+}
+.format-eloflexsections .section.img-text {
+    border: 1px solid #c9c9c9;
+    background: #f0f0f0 !important;
+}

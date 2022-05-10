@@ -1,0 +1,35 @@
+
+
+[data-block="myeloworks"]  .card-body {
+    color: #000;
+    border-color: #B9B9B9;
+    -webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.5);
+    box-shadow:  0 0 5px  rgba(0,0,0,0.5);
+    background-color: #fff;    
+}
+
+.elo_works_block {
+    max-height: 350px;
+    width: 100%;
+    overflow: auto;
+    /*padding: 0.25rem;*/
+    -webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.5);
+    box-shadow:  0 0 5px  rgba(0,0,0,0.5);
+    /*background-color: #fff;*/
+}
+.eloworkscoursename {
+    white-space: nowrap;
+    border-bottom: 1px solid #B9B9B9;
+    padding-top: 0.25rem;
+    padding-bottom: 0.75rem;
+}
+.elo_works_block_forum {
+    white-space: nowrap ;
+    padding-left: 0.25rem;
+    color:  #0e90d2;     
+}
+.elo_works_block_assign {
+    white-space: nowrap ;
+    padding-left: 0.25rem;
+    color: #265ea2;
+}

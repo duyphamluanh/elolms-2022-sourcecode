@@ -1,0 +1,3095 @@
+/**
+* OUELOFORDSON CUSTOMIZATIONS FOR NEW ELEMENTS
+**/
+
+/**
+* Layout Header
+**/
+
+.headerlogo img {
+    padding: $spacer;
+}
+
+/**
+* Block Width
+**/
+
+@media screen and (min-width: 991px) {
+    #region-main.has-blocks {
+        //width: calc(100% - #{$blockwidthouelofordson});
+        width: calc(100% - 266px);
+    }
+    #region-main-settings-menu.has-blocks {
+        width: calc(100% - #{$blockwidthouelofordson});
+    }
+}
+
+@media screen and (min-width: 991px) {
+    [data-region="blocks-column"] {
+        width: calc(#{$blockwidthouelofordson} - 30px);
+    }
+}
+
+// Alerts
+
+.moodle-dialogue-bd div[role="alert"] {
+    background-color: $brand-danger;
+    padding: 1rem;
+}
+
+/**
+* login on frontpage 
+**/
+.panelelo-login {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
+    box-sizing: border-box;
+    border: solid 1px #ddd;
+    background-color: $white;
+    box-shadow:  0 0 5px  rgba(0,0,0,0.6);
+}
+.panel-blue-login {
+    border-color: #25aae1;
+}
+.panel-blue-login > .panel-heading {
+    color: $white;
+    background-color: #25aae1;
+    border-color: $white;
+    h3 {
+        font-weight: bold;
+    }
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: inherit;
+    font-size: 18px;
+}
+.panel-body-login {
+    padding: 15px;
+    background: #25aae1;
+    label {
+        color: $white;
+        font-weight: bold;
+        margin-top: 0.5rem;
+    }
+    .btn-primary {
+        background: -webkit-linear-gradient(#f90909, #a92f0b);
+        background: -o-linear-gradient(#f90909, #a92f0b);
+        background: -moz-linear-gradient(#f90909, #a92f0b);
+        background: linear-gradient(#f90909, #a92f0b);
+        color: $white !important;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none !important;
+    }
+    .forgetpass {
+        color: $white;
+        text-align:left;
+        a {
+             color: $white;
+             font-weight: bold;
+             &:hover {
+                color: #f7dddc;
+             }
+        }
+    }
+}
+.panel-body::after, .panel-body::before {
+    display: table;
+    content: " ";
+}
+.panel-body::after {
+    clear: both;
+}
+.fpsignup {
+    background-color: $fploginform;
+    padding: $spacer;
+    box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    border: 1px solid $card-bg;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.col-md-4.signinform {
+    padding-left: 0;
+    padding-right: 20px;
+    margin-right: 15px;
+    float:left;    
+}
+
+.fpsignup label {
+    margin: 0;
+}
+// Edit by toan
+.sign-up-btn {
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+}
+.fpsignup .m-t-2 {
+    margin-top: .5rem !important;
+}
+
+.row.signin {
+    margin: 2rem 0;
+}
+
+.fpcustomtext {
+    margin: 2rem 0 4rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+div#ouelofordsonlogin {
+    background-color: $card-bg;
+}
+
+.fpinstructions {
+    margin-top: 15%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.loginnavicon {
+    display: inline-block;
+    padding: 1.5rem;
+    margin-bottom: $spacer;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.3);
+    border: 1px solid #fff;
+}
+
+.card.loginicon {
+    text-align: center;
+}
+
+.row.loginicons {
+    padding: 2rem 0;
+}
+
+.featuretext {
+    text-align: initial;
+}
+
+.logintop {
+    text-align: center;
+}
+
+.logintopimage {
+    display: inline-block;
+}
+
+.loginfeaturedimage img {
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.3);
+    border: 1px solid #fff;
+}
+
+.featuretext h4 {
+    border-top: 4px solid $dark;
+    padding: $spacer;
+    border-bottom: 1px dashed $gray-lighter;
+    background-color: $gray-lightest;
+}
+
+#page-login-index #page, #page-login-signup #page {
+    margin-top: 0!important;
+}
+body#page-login-index {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-repeat: no-repeat;
+    min-height: 850px;
+}
+#page-login-signup #ouelofordsonlogin {
+    display: none;
+}
+
+#page-login-index #page-wrapper {
+    padding-bottom: 0;
+}
+
+/* Editing Block Columns */
+
+.editing aside#block-region-fp-a {
+    border: 2px dashed $gray-lighter;
+    min-height: 2rem;
+}
+.editing aside#block-region-fp-b {
+    border: 2px dashed $gray-lighter;
+    min-height: 2rem;
+}
+.editing aside#block-region-fp-c {
+    border: 2px dashed $gray-lighter;
+    min-height: 2rem;
+}
+.editing aside#block-region-side-pre {
+    border: 2px dashed $gray-lighter;
+    min-height: 2rem;
+}
+/* edit margin-top by toan */
+aside#block-region-side-pre {
+    margin-top: 0rem;
+}
+
+/* Teacher Dashboard */
+
+.modal-dialog {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.teacherdashboard {
+    padding: 1rem;
+}
+
+.studentdashboard {
+    padding: 1rem;
+}
+
+.studentdashboard .col-md-2 {
+    float: right;
+    width: auto;
+    text-align: center;
+    padding: 0 2rem;
+    font-weight: bold;
+}
+
+.teacherdashbutton {
+    font-size: 16px;
+    float: right;
+    padding: 5px 10px;
+}
+
+.teacherdashboard i.dashicon {
+    float: left;
+    padding: 0px 4px;
+}
+
+.coursestafflisting img.userpicture {
+    margin-right: 0;
+    float: right;
+}
+
+.thiscoursebutton {
+    font-size: 16px;
+    float: right;
+    padding: 5px 10px;
+}
+
+.thiscoursebutton .dropdown-menu {
+    right: -10px;
+    left: initial;
+}
+
+.editcogbutton {
+    float: right;
+    margin-left: .25rem;
+    padding: 0 .25rem;
+}
+
+.enrollcodebutton {
+    font-size: 16px;
+    float: right;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .enrollcodes.nav-item.nav-link {
+        display: none;
+    }
+    .navbar .container-fluid {
+        padding: 0;
+    }
+}
+
+/* Block Sliding Panel */
+
+div#blockslider {
+    background-color: $gray-200;
+    border: 1px solid $gray-400;
+    padding: 1rem;
+    margin-top: 1.8rem;
+}
+a#blocksliderbutton {
+    margin: .5rem 0;
+}
+
+/* Footer */
+
+ul.footercontact {
+    list-style: none;
+}
+
+#page-footer .socials_wrapper .socials a{
+    text-decoration: none !important;
+    color: $primary;
+}
+
+/* Slideshow */
+
+.slide1image,
+.slide2image,
+.slide3image {
+    height: $slideshowheight;
+}
+
+.carousel-caption.d-none.d-md-block {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption {
+    bottom: 0px;
+}
+
+.carousel-indicators {
+    bottom: 0!important;
+}
+
+.carousel-indicators li {
+    width: 40px;
+    height: 10px;
+    margin: 0;
+    border-radius: 0px;
+}
+
+.carousel-indicators .active {
+    width: 40px;
+    height: 10px;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+a.left.carousel-control .fa-chevron-left {
+    font-size: 35px;
+    position: absolute;
+    left: 10px;
+    bottom: 40%;
+}
+
+a.right.carousel-control .fa-chevron-right {
+    font-size: 35px;
+    position: absolute;
+    right: 10px;
+    bottom: 40%;
+}
+
+
+/* Enhanced Homepage */
+
+.fpwonderbox {
+    margin-bottom: 1rem;
+}
+
+.fpstartwrap {
+    padding:1rem;
+}
+
+.fpstart {
+    text-align: center;
+}
+
+.iconset .btn.btn-secondary {
+    //width: $fpicon-width;
+    width: 150px;
+    margin-bottom: .5rem;
+}
+
+.iconset .btn.btn-secondary.createacourse {
+    width: $fpiconcreate-width;
+}
+div#fpslider {
+    padding: $spacer;
+    border: 1px solid $gray-lighter;
+}
+
+.alertbox {
+    text-align: center;
+}
+
+.alertmessage {
+    display: inline-block;
+    background-color: $brand-warning;
+    border-radius: $border-radius;
+    padding: 15px;
+    margin: 20px;
+}
+
+.alertmessage p {
+    margin-top: initial;
+    margin-bottom: initial;
+}
+
+.markettiles {
+    margin: 1rem 0;
+}
+
+.market-tile {
+    margin: 1rem 0rem;
+    background-color: $body-bg;
+    padding: 1rem;
+    border: 1px solid $dark;
+    border-top: 7px solid;
+}
+
+.marketcontent {
+    padding: 1rem;
+    background-color: $markettextbg;
+    height: 10rem;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+
+.marketcontent::-webkit-scrollbar {
+    width: 7px;
+}
+
+.marketcontent::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
+    border-radius: $border-radius;
+}
+
+.marketcontent::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+/**
+* Easy Enrollment Form
+**/
+.easyenrol {
+    text-align: center;
+}
+
+.qr-input-group-addon {
+    padding: .25rem .75rem;
+    font-size: 2rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+form#enrolform_easy {
+    text-align: center;
+    display: inline-flex;
+}
+
+form#enrolform_easy .input-group-addon.qr-button {
+    font-size: 2rem;
+}
+
+form#enrolform_easy input#enrolform_course_code {
+    font-size: 2rem;
+}
+
+form#enrolform_easy button.btn.btn-primary {
+    font-size: 2rem;
+}
+
+
+/**
+* Available Courses
+**/
+
+.class-box-fp {
+    height: $courseboxheight;
+    background-color: $body-bg;
+    padding: 1rem;
+    border: 1px solid $body-bg;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.class-box-fp .course-title h4 a:hover {
+    text-decoration: none;
+}
+
+.class-box-fp .course-title {
+    background-color: darken($card-bg, 5%);
+    padding: $spacer;
+    padding-top: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.class-box-fp .course-title:after {
+    text-decoration: none;
+    display: block;
+    content: '';
+    border-bottom: solid 1rem $brand-primary;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.class-box-fp .course-title:hover:after {
+    transform: scaleX(1);
+}
+
+.courseimagecontainer {
+    height: calc(45%);
+}
+
+.class-box {
+    margin-bottom: 2rem;
+    border: 1px solid $card-bg;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    height: $courseboxheight;
+    overflow: hidden;
+}
+
+.class-fullbox {
+    margin-bottom: 2rem;
+    border: 1px solid $card-bg;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+.class-fullbox7 {
+    margin-bottom: 2rem;
+    border: 1px solid $card-bg;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 4rem 2rem 0 2rem;
+}
+
+.class-fullbox .course-summary {
+    height: 100%;
+    overflow: auto;
+}
+
+.fullbox {
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: overlay;
+}
+
+.fullbox7 {
+    background-color: $card-bg;
+}
+
+.coursedata {
+    padding-top: .5rem;
+}
+
+.course-title-fullboxbkg {
+    background-color: $card-bg;
+    padding: 1rem;
+}
+
+.course-title-fullboxbkg7 {
+    padding: 1rem;
+}
+
+.course-title {
+    padding-top: 1rem;
+}
+
+.class-list {
+    clear: both;
+    text-align: center;
+}
+
+.coursesmorelink {
+    padding: 1rem;
+}
+
+.course-image-view {
+    height: 100%;
+}
+
+.dash-course-image-view {
+    padding-top: 5rem;
+}
+
+.class-box .course-summary {
+    height: 4rem;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+
+.class-box .course-summary::-webkit-scrollbar {
+    width: 7px;
+}
+
+.class-box .course-summary::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+}
+
+.class-box .course-summary::-webkit-scrollbar-thumb {
+    background-color: darken($brand-primary, 15%);
+    outline: 1px solid slategrey;
+}
+
+.tooltip-inner {
+    max-width: 350px;
+    font-size: 14px;
+}
+
+.course_category_tree {
+    padding: 1rem;
+}
+
+.cat-icon {
+    margin: 5px;
+}
+
+.category.box-class {
+    padding-bottom: $spacer;
+    text-align: center;
+}
+
+.category.box-class:nth-child(5) {
+    clear: both;
+}
+
+.circle-count {
+    float: right;
+    padding-left: 3px;
+}
+
+.courseimagecontainer:hover .course-overlay {
+    opacity: 1;
+}
+
+.courseimagecontainer:hover .course-image-view {
+    opacity: 0.3;
+}
+
+.course-overlay {
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 40%;
+    font-size: 5rem;
+    margin-top: -7rem;
+    color: $gray-dark;
+}
+
+.coursestyle2 {
+    width: 100%;
+    height: $courseboxheight;
+    background-color: $black;
+    color: $white;
+    text-align: left;
+    font-size: 15px;
+    box-shadow: 3px 3px 3px #B9B9B9;
+    -moz-box-shadow: 3px 3px 3px #B9B9B9;
+    -webkit-box-shadow: 3px 3px 3px #B9B9B9;
+}
+
+.coursedimmed1 {
+    background-color: rgba(150, 150, 150, 0.9);
+}
+
+.coursedimmed2 {
+    background-color: rgba(150, 150, 150, 0.9);
+    height: 100%;
+}
+
+.coursedimmed3 {
+    background-color: rgba(150, 150, 150, .9);
+    padding: 1rem;
+}
+
+.class-box-courseview {
+    background-color: #dae6e5;
+    border: 1px solid #dae6e5;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    height: 100%;
+}
+
+.coursestyle2 * {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.coursestyle2 figcaption {
+    position: absolute;
+    height: 75px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+    padding: 15px;
+    //background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(63, 63, 63, 0.9);
+}
+
+.coursestyle2 h3 {
+    font-family: $font-family-sans-serif; 
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 3px 0;
+}
+
+a.coursestyle2url {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+a.coursestyle3url {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.coursestyle2:hover figcaption,
+.coursestyle2.hover figcaption {
+    height: calc(100%);
+}
+
+.coursestyle2:hover p.course-summary::-webkit-scrollbar {
+    width: 7px;
+}
+
+.coursestyle2:hover p.course-summary::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+}
+
+.coursestyle2:hover p.course-summary::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+@media screen and (min-width: 992px) {
+    .coursestyle2:hover p.course-summary,
+    .coursestyle2.hover p.course-summary {
+        overflow-y: auto;
+        height: 5rem;
+    }
+}
+
+.coursestyle2 .course-card {
+    margin-top: 4rem;
+}
+
+.coursestyle2:hover .course-card {
+    margin-top: 0rem;
+}
+
+ul.teacherscourseview {
+    list-style-type: none;
+    font-weight: bold;
+    font-style: normal;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.tilecontainer {
+    position: relative;
+    margin: 3rem 0 2rem 0;
+}
+
+
+/** 
+* TIDY UP 
+**/
+
+.section-go-link {
+    padding: .25rem;
+    margin: .5rem;
+    background-color: $gray-100;
+    display: inline-block;
+    border: 1px solid $gray-300;
+}
+
+.course-content ul.topics li.section .left, .course-content ul.topics li.section .right {
+    width: auto;
+    padding: 0;
+}
+
+.editing .course-content ul.topics li.section .left, .editing .course-content ul.topics li.section .right {
+    width: auto;
+    padding: 0 6px;
+}
+
+#page-my-index .block_myoverview .card-body {
+    border: 0;
+}
+
+.path-course-view .actions img.icon {
+    width: 24px;
+    height: 24px;
+}
+
+#page-badges-mybadges .fpwonderbox {
+    display: none;
+}
+
+#page-badges-mybadges .markettiles {
+    display: none;
+}
+
+#page-user-files .fpwonderbox {
+    display: none;
+}
+
+.socials_wrapper {
+    margin: 0 auto;
+    .socials {
+        margin-bottom: 0;
+    }
+}
+
+.socials a:hover {
+    text-decoration: none;
+}
+
+.coursecontrols .nav-item.nav-link {
+    padding: 0;
+}
+
+.editingbutton {
+    float: left;
+    margin: 0 .25rem;
+}
+
+.navbar-nav .coursecontrols .nav-item + .nav-item {
+    margin-left: .25rem;
+}
+
+#nav-drawer.closed {
+    left: -($drawer-width + $drawer-offscreen-gutter);
+}
+
+.studentdash .btn, .teacherdash .btn, .enrollcodes .btn, .siteadminlink .btn {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+}
+
+.studentdash .btn:hover, .teacherdash .btn:hover, .enrollcodes .btn:hover, .siteadminlink .btn:hover {
+    background-color: $card-bg;
+    color: $gray-dark;
+}
+
+
+// Course Completion Image fix.
+[data-region="coursecompetencyactivities"] .list-inline-item img {
+width: $activityiconsize;
+}
+
+/* H5P regression fix for editor https://moodle.org/mod/forum/discuss.php?d=347602#p1402801 */
+@media (min-width:544px) {
+    .form-inline .form-control-static {
+        display: block!important;
+    }
+}
+/* End H5P */
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+// Progress bar fixes
+
+.progress_bar {
+    background-color: $gray-100;
+    text-align: center;
+}
+
+.progress_bar_completed {
+    background-color: $primary;
+    text-align: right;
+}
+
+//Dashboard no progress icon centered fix
+
+.progress-chart-container .no-progress .icon {
+    top: 50%;
+    left: 40%;
+}
+
+/**
+* Responsive Fixes
+**/
+div#page.container-fluid {
+    padding: 0 $gutterwidth;
+}
+@media screen and (max-width: 576px) {
+    div#nav-message-popover-container {display: none;}
+    div#nav-notification-popover-container {display: none;}
+    div#page-content {
+        padding: 0;
+    }
+    #page-course-view-topics .course-content ul.topics li.section {
+        padding: 2rem 0;
+    }
+    .card-body {
+        padding: .5rem;
+    }
+    .section li.activity {
+        padding: .5rem;
+    }
+    .course-content ul.section {
+        margin: 0;
+    }
+    div#page.container-fluid {
+        padding: 0!important;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .p-a-1 {
+        padding: 0 !important;
+    }
+    .class-fullbox7 {
+        padding: 3rem .25rem 0 .25rem;
+    }
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+    max-height: 500px;
+    overflow: auto;
+}
+
+$colorblue:                     #0066cc !default;
+$colorcyanblue:                 #0099ff !default;
+$colordarkgrey:                 #3f3f3f !default; 
+$colorlightgrey:                #efefef !default;
+$color-navtop:                  #265ea2 !default;
+$color-table-thead:             #347CAD !default;
+$color-great-light-shade:       #DDDDDD !default;
+$color-b9b9:                    #b9b9b9 !default;
+$color-boder-calendar-default:  #e8e8e8 !default;
+$color-nav-link:                #c1d6e9 !default;
+$color-FFF7F7:                  #FFF7F7 !default;
+$color-4790CD:                  #4790CD !default;
+$color-navlink-course:          #a4a4a4 !default;
+
+h1, .h1 { font-size: 30px; font-weight: normal; }
+h2, .h2 { font-size: 20px; font-weight: normal;}
+h3, .h3 { font-size: 18px; font-weight: normal;}
+h4, .h4 { font-size: 16px; font-weight: normal;}
+h5, .h5 { font-size: 14px; font-weight: normal;}
+h6, .h6 { font-size: 14px; font-weight: normal;}
+
+.position-default {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38px;
+    height: 38px;
+}
+
+// Change background nav-drawer
+[data-region="drawer"] {
+    background-color: $colorlightgrey;
+    padding: 15px $drawer-padding-y;;
+}
+
+//**********************************Nhien elo search navbar*********************
+a.topnavsearch-icon {
+    display: block;
+    color: $white !important;
+    padding: 8px;
+    .icon {
+        font-size: 20px;
+    }
+    @include hover-focus {
+        color: yellow !important;
+    }
+}
+.searchnav {
+  width: 100%;
+  position: relative;
+  &:before {
+    @extend .position-default;
+    line-height: 38px;
+    font-family: 'FontAwesome';
+    content: '\f002';
+    text-align: center;
+    color: $color-navtop;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+.searchTerm {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  height: 38px;
+  outline: none;
+  @include border-radius(10px);
+  border: 2px solid $colorcyanblue;
+  @include hover-focus {   
+    border-color: #aaa;
+    -webkit-box-shadow: 0 1px 1px #bbb inset;
+    -moz-box-shadow: 0 1px 1px #bbb inset;
+    box-shadow: 0 1px 1px #bbb inset;
+    outline: 0;
+    }
+}
+.searchButton {
+    @extend .position-default;
+    opacity: 0;
+    cursor: pointer;
+    .icon {
+        color:$color-navtop; 
+    }
+}
+.boxsearch {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+}
+
+// *******************************Nhien Style Search Navigation ****************
+
+.btn-top {
+    color: $white;
+    background-color: $color-navtop;
+    border-color: $color-navtop;
+}
+.userpictureavatar
+{
+    padding: 1px;
+    @include border-radius(4px);
+    border: 1px solid $white; 
+    max-width: 100%;
+    height: auto;
+}
+.pt-3 {
+    padding-top: 1rem !important;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.custom-page-navbar {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(38,94,162,0.3);
+    text-shadow:
+        2px 2px 1px rgba(0,0,0,0.1),
+        3px 3px 1px rgba(0,0,0,0.1),
+        0px 0px 2px rgba(0,0,0,.2);   
+}
+.color-nav-text {
+    color: $white;
+    text-decoration: none;
+    -webkit-text-decoration-skip: objects;
+}
+.p-2 {
+    padding-left: .3rem !important;
+    padding-bottom: .3rem !important;
+}
+//dropdown menu hover
+.dropdown-item {
+    a {
+        @include hover-focus {
+            color: $white;
+            background-color: $colorblue;
+            transition: all 0.3s ease 0.1s;
+        }
+    }  
+}
+//icon hover 
+.navbar-light .navbar-nav .nav-link {
+    outline: none;
+    border: none;
+    -moz-outline-style: none;
+    &:hover{
+        color: #F58516;
+        transition: all 0.3s ease 0.1s;
+    }
+    &:focus {
+        color: $white;
+    } 
+}
+//table discussion
+.forumheaderlist th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: $color-table-thead;
+    color: $white;
+    border: 1px solid $color-great-light-shade;
+}
+//Nhien style forum
+.forumpost {
+    //border: $border-width solid $border-color;
+    display: block;
+    padding: 6px;
+    @include border-radius(3px);
+    border: 1px solid $colordarkgrey;
+    /*background-color: #f5f5f5;*/
+    box-sizing: border-box;
+    .header {
+        margin-bottom: 3px;
+        padding: .5rem;
+        border-bottom: 1px solid $colordarkgrey;
+    }
+    .picture img {
+        margin: 3px;
+        &.userpicture {
+            margin-left: 3px;
+            margin-right: 10px;
+        }
+    }
+
+    .content {
+        .posting.fullpost {
+            margin-top: 8px;
+            .post-word-count{
+                color: #802420;
+                width: 80px;
+                text-align: center;
+                border: 1px solid $color-great-light-shade;
+                @include border-radius(30px);
+                background: $white;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .row {
+        display: block;
+        .author {
+            a {
+                color: $colorblue;
+                font-weight: bold;
+            }
+        }
+        .content-mask,
+        .options {
+            margin-left: 48px;
+            background: #e6e6e6;
+            padding: 0.5rem;
+            border-radius: 0.5em;
+            .forum-post-rating{
+                padding-top: 0.2rem;
+                margin-left: 0.5rem;
+                padding-bottom: 0.2rem;
+            }
+            .commands {
+                padding-top: 0.2rem;
+                margin-left: 0.5rem;
+                padding-bottom: 0.2rem;
+                color: #e6e6e6;
+                a{
+                    color: $colorcyanblue;
+                    padding: 0.5rem;
+                    border: 1px solid $color-great-light-shade;
+                    @include border-radius(10px);
+                    background: $white;
+                    text-align: center;
+                    box-shadow:  0 0 5px  rgba(0,0,0,0.2);
+                }
+            }
+        }
+
+        &.side {
+            clear: both;
+        }
+    }
+}
+
+#mod-forum-view-elo-card-body{
+    font-size: 14px;
+    border: 1px solid $colordarkgrey;
+        a {
+            color: $colorblue;
+            @include hover-focus{
+               color: $colorcyanblue; 
+            }
+        }
+    .header.backto {
+        color: $black;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        border: 1px solid #09f;
+        @include border-radius(30px);
+        background: $white;
+        text-align: center;
+        max-width: 30%;
+                    
+    }    
+    #newdiscussionform .btn-secondary{
+        color: #fff;
+        background-color: $color-table-thead;
+        -webkit-transition: all .4s ease-in-out;
+        -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        border: 1px solid $color-table-thead;
+        display: block;
+        text-align: center; 
+        font-weight: bold;
+    }   
+    h2{
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    } 
+    
+}
+
+#mod-quiz-view-elo-card-body, #mod-assign-view-elo-card-body {
+    h2 {
+        padding-top: 0.5rem;
+        text-align: center;
+    } 
+}
+
+#mod-forum-discuss-elo-card-body{
+    font-size: 14px;
+    border: 1px solid $colordarkgrey;
+    font-family: $font-family-sans-serif;
+    a {
+        color: $colorblue;
+        &:hover {
+            color: $colorcyanblue;
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 16px;
+        color: #6a6a6a;
+    }
+    h3 {
+        text-align: center;
+        font-size: 20px;
+        color: $colordarkgrey;
+        font-weight: bold;
+    }
+    .prev-discussion{
+        color: $black;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        border: 1px solid $colorcyanblue;
+        @include border-radius(15px);
+        background: $white;
+        text-align: center;
+    }
+    .next-discussion{
+        color: $black;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        border: 1px solid $colorcyanblue;
+        @include border-radius(15px);
+        background: $white;
+        text-align: center;
+    }
+    .author {
+            a {
+                color: $colorblue;
+                font-weight: bold;
+            }
+    }
+    .discussiontoggle{
+        color: $black;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        border: 1px solid $colorcyanblue;
+        border-radius: 15px;
+        background: $white;
+        text-align: center;
+    }
+    .header.backto {
+        color: $colorcyanblue !important;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        border: 1px solid $colorcyanblue;
+        border-radius: 15px;
+        background: $white;
+        text-align: center;
+        max-width: 30%;
+    }
+    .discussioncontrols{
+        background-color: transparent;
+    }
+}
+
+#page-report-progress-index #completion-progress th {
+    white-space: nowrap;
+}
+
+#mod-forum-post-elo-card-body {
+    h2{
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        text-align: center;
+    }
+    .indent{
+        color: $black;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        border: 1px solid $color-great-light-shade;
+        border-radius: 30px;
+        background: $white;
+        text-align: left;
+    }
+    #mformforum{
+        border-radius: 2px;
+        -webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.6);
+        box-sizing: border-box;
+        border:$border-width solid  $color-great-light-shade;
+        box-shadow:  0 0 5px  rgba(0,0,0,0.6);
+        &:target {
+        padding: 1rem;
+        padding-top: 0px !important;
+        margin-top: 0.5rem !important;
+        }
+    }
+    .header.backto {
+        color: $black;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+        border: $border-width solid #ddd;
+        border-radius: 30px;
+        background: $white;
+        text-align: center;
+        max-width: 30%;;
+    }
+}
+
+.header.backto {
+    color: $black;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 30px;
+    background: $white;
+}
+// *********************height header************************************
+#page-header .pb-3 {
+    padding-bottom: .5rem !important;
+}
+
+div#page-content {
+    padding-top: .5rem;   
+}
+
+div#learningcontent {
+    padding-top: 0rem !important;
+}
+
+.customimage {
+        height: 259px !important;
+}
+/*custom header*/
+[class*="elo-card-test-"] {
+    height: 261px; 
+    .btn-secondary {
+        color: $black;
+        background-color: $white;
+        border-color: $white;
+        @include border-radius(15px);
+    }
+    .btn-secondary:hover {
+        color: $colorblue;
+        background-color: $white;
+        border: $color-4790CD;
+        @include border-radius(15px);
+    }
+    .flex-wrap {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+}
+.elo-card-test-site-index {
+        .mr-auto {
+            text-align: center;
+            width: 100%;
+            z-index: 999;
+        }
+    }
+#mod-assign-grading-elo-card-body {
+    .dropdown-3 {
+        color: $color-table-thead;
+    }
+}
+
+#admin-theme-index-elo-card-body {
+    .singlebutton {
+        margin-bottom: 1rem;
+    }
+}
+
+div.clearfix {
+    margin-bottom: 0.3rem;
+}
+//************************************CARD BODY************************
+.panel-tools {
+    position: absolute;
+    right: 1%;
+    top: 5px;
+}
+
+#course-index-elo-card-body {
+    .form-inline {
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+    div.clearfix {
+        background: $color-FFF7F7;
+        border-radius: 5px;
+    }
+}
+
+#course-management-elo-card-body {
+    .row {
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+#report-outline-index-elo-card-body {
+    h2 {
+        text-align: center;
+    }
+    table td.numviews {
+        text-align: left;
+    }
+}
+
+#course-edit-elo-card-body, #mod-resource-view-elo-card-body {
+    h2 {
+        text-align: center;
+    }
+}
+#report-completion-index-elo-card-body {
+    .generaltable thead tr{
+        color: $white;
+        background: $color-table-thead;
+    }
+}
+
+#myoverview_courses_view_in_progress {
+    .courses-view-course-item {
+        -webkit-box-shadow: 3px 3px 3px $color-b9b9;
+        -webkit-box-shadow: 3px 3px 3px $color-b9b9;
+        box-shadow: 3px 3px 3px $color-b9b9;
+        -moz-box-shadow: 3px 3px 3px $color-b9b9;
+        .course-info-container {
+            .media {
+                .media-body {
+                    margin-top: 1rem !important;
+                }
+            }
+        }
+    }
+}
+#id_searchbyusername {
+    display: none;
+}
+.elo-course-dashboard-percent-text {
+    padding: 8px 12px;
+    background-color: rgba(0,0,0,.6);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 68px;   
+    a {
+        font-size: 16px;
+        color: $white; 
+        outline: none;
+        @include hover-focus{
+            color: $color-great-light-shade;
+        }
+    }
+    h4 {
+        margin-bottom: none !important;
+    }
+}
+#myoverview_courses_view_in_progress .courses-view-course-item .course-info-container .media .media-body {
+    margin-top: 0rem !important;
+}
+//************************************Nhien Style FOOTER************************
+.container-fluid-elo {
+   // width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#top-footer {
+    font-family: $font-family-sans-serif;
+    background-color: $colordarkgrey !important;
+    text-align: left;
+    font-size: 14px;
+     //line-height: 24px;
+    .panelfooter {  
+        display: block;
+        padding: 10px;
+        position: relative;
+    }  
+    h3  {
+        font-size: 20px;
+        color: $white;
+        font-weight: bold;
+        text-align: left; 
+    }
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }   
+    .contact p span {
+        display: block;
+        font-weight: normal;
+    }
+    .panel-body i{
+            background-color: $color-table-thead;
+            color: $white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            margin: 5px 2px 5px 0;
+            vertical-align: middle;
+            font-size: 14px;        
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+        @include hover-focus{
+            color: #0e93ee;
+            transition: all 0.3s ease 0.1s;
+        }
+    }
+    .elomobile {
+        padding-top: 0.6rem;
+        padding-left: 0.6rem;
+    }
+    hr {
+        background: $white;
+    }
+    .hidemobile {
+        display: none ;
+    }
+} 
+//************************************Nhien Style FOOTER Home************************
+.elo-container-home {
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1em;
+    color: $white;
+    background-color: $colordarkgrey !important;
+    text-align: left;
+    line-height: 2em;
+    .contact ul li {
+        i {
+            background-color: $color-table-thead;
+            color: $white;
+            font-size: 1.2em;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2em;
+            margin: 5px 10px;
+            vertical-align: middle;
+        }      
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    h4 {
+        font-weight: bold;
+    }
+    hr {
+        background: $white;
+    }
+}
+
+//**********************************Nhien style sai theme forson*******************************
+#repaginatecommand {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#selectmultiplecommand {
+    margin-left: 1rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+//***************************Nhien Style Fix Loi Hien Thi********************************
+
+.sitelink img {
+    display: none;
+}
+.usermenu {
+    .login a {
+        color: yellow;
+        @include hover-focus{
+            color: yellow;
+            text-decoration: none;
+        }
+    }   
+}
+span.login {
+    line-height: 2.25rem;
+    color: $white;
+}
+.logininfo {
+    display:none;
+}
+#intro .no-overflow {
+    background-color: $color-FFF7F7;  
+    padding: 0.5rem 0.5rem;
+}
+
+.colortext {
+    color: #d9534f;
+    line-height: 2;
+    font-size: 16px;
+}
+//Color caret , username
+.usertext-bg {
+    color: $white;
+    font-weight: bold;
+    @include hover-focus{
+        color: yellow;
+        transition: all 0.3s ease 0.1s; 
+    }
+}
+.dropdown-toggle.colortoggle{
+        color: $white;
+        text-decoration: none;
+        outline: none;
+        @include hover-focus{
+            color: $white;
+            transition: all 0.3s ease 0.1s;
+            text-decoration: none;
+        }
+}
+a {
+    color: $colorblue;
+    text-decoration: none;
+    outline : none;
+    @include hover-focus{
+        color: $color-table-thead;
+        transition: all 0.3s ease 0.1s;
+        text-decoration: none;
+    }
+}
+.forumheaderlist > thead > tr > th > a > i {
+    color: $white;
+}
+
+// Nhien Fix Loi De button cho Ouelofordson
+.singlebutton {
+    z-index: 0;
+}//NhienTestCSSstore
+.breadcrumb {
+    display:none;
+}
+
+#elosummary {
+    line-height: 35px;
+    span {    
+        color: $color-table-thead;
+        font-weight: bold;
+    }
+    ul li {
+        list-style: none;
+    }
+}
+
+.popover-region-container {
+    @include border-radius(5px);
+}
+.dashtitle {
+    padding-top: 1rem;
+}
+.generaltable {
+    border: 1px solid $color-great-light-shade;
+    thead {
+        tr {
+           color: $white;
+           background: $color-table-thead;
+           border: 1px solid $color-table-thead; 
+        }
+        a {
+           color: $white; 
+        }
+    }
+}
+.elooverviewtab {
+    color: $white;
+}
+// ******************************Nhien elo Lich trinh hoc tap bang so 1*********************************************
+
+.eloheightcontainer {
+    font-size: 14px;
+    font-family: $font-family-sans-serif;
+    .btn-secondary {
+        background-color: $color-table-thead;
+        color: $white;
+        border: 1px solid $color-table-thead;
+        display: block;
+    }
+    .hovercoursecalendar:hover {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    }
+    .calendartable {
+        .header {
+            background-color: $color-table-thead;
+            color: $white; 
+            font-size: 16px    ;
+            font-weight: bold;
+            line-height: 15px;
+            padding: 7px 0;
+            text-transform: uppercase;
+        }
+        width : 98%;
+        margin: 10px auto;
+        table-layout: fixed;
+    }
+    th,
+        td {
+            width: 14%;
+            vertical-align: top;
+            text-align: center;
+            border: 0;
+        }
+    .calendar-controls {
+        .previous,
+        .next,
+        .current {
+            display: block;
+            float: left;
+            width: 12%;
+        }
+
+        .previous {
+            text-align: left;
+            border: 1px solid transparent;
+        }
+
+        .current {
+            text-align: center;
+            width: 76%;
+            padding-top: 0 !important;
+            font-size: 20px;
+        }
+
+        .next {
+            text-align: right;
+            border: 1px solid transparent;
+        }
+
+        .drop-target {
+            box-sizing: border-box;
+            border: 1px dashed $brand-primary;
+        }
+    }
+    .filters {
+        table {
+            border-collapse: separate;
+            border-spacing: 2px;
+            width: 100%;
+        }
+    }
+    .bottom {
+        text-align: center;
+        padding: 5px 0 0 0;
+    }
+    .calendarmonth {
+        width: 98%;
+        margin: 10px auto;
+        box-shadow: 0 0 5px 0 #e8e8e8;
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style-type: none;
+
+                > a {
+                    @include text-truncate;
+                    max-width: 100%;
+                    display: inline-block;
+
+                    &:hover {
+                        text-decoration: $link-decoration;
+
+                        .eventname {
+                            text-decoration: $link-hover-decoration;
+                        }
+                    }
+                }
+
+                .icon {
+                    margin-left: 0.25em;
+                    margin-right: 0.25em;
+                    vertical-align: initial;
+                }
+
+                .badge {
+                    &.badge-circle {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 6px;
+                        vertical-align: middle;
+
+                        &.calendar_event_category {
+                            background-color: $calendarEventCategoryColor;
+                        }
+                        &.calendar_event_course {
+                            background-color: $calendarEventCourseColor;
+                        }
+
+                        &.calendar_event_site {
+                            background-color: $calendarEventGlobalColor;
+                        }
+
+                        &.calendar_event_group {
+                            background-color: $calendarEventGroupColor;
+                        }
+
+                        &.calendar_event_user {
+                            background-color: $calendarEventUserColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        td {
+            height: 5em;
+        }
+
+        .clickable:hover {
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        }
+    }
+
+    .calendar-controls {
+        .previous,
+        .next {
+            width: 30%;
+        }
+
+        .current {
+            width: 39.95%;
+            @extend .h2;
+        }
+    }
+
+    .controls {
+        width: 98%;
+        margin: 10px auto;
+    }
+
+    .calendar_event_category,
+    .calendar_event_course,
+    .calendar_event_site,
+    .calendar_event_group,
+    .calendar_event_user {
+        &:hover {
+            a {
+                color: $link-hover-color;
+                text-decoration: $link-hover-decoration;
+            }
+        }
+    }
+
+    .calendar_event_category {
+        border-color: $calendarEventCategoryColor;
+    }
+
+    .calendar_event_course {
+        border-color: $calendarEventCourseColor;
+    }
+
+    .calendar_event_site {
+        border-color: $calendarEventGlobalColor;
+    }
+
+    .calendar_event_group {
+        border-color: $calendarEventGroupColor;
+    }
+
+    .calendar_event_user {
+        border-color: $calendarEventUserColor;
+    }
+
+    .calendar-controls {
+        
+    }
+
+    .calendartable {
+        td,
+        li {
+            padding: 0 4px 4px 4px;
+        }
+
+        li {
+            text-align: left;
+        }
+    }
+
+    .header {
+        overflow: hidden;
+
+        .buttons {
+            float: right;
+        }
+    }
+
+    .event .card-header img {
+        vertical-align: baseline;
+    }
+    .singlebutton button {
+        display: none;
+    }
+   
+}
+.maincalendar {
+    .bottom {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;     
+    }  
+}
+
+// ***************************Nhien elo Lich trinh hoc tap bang so 2************
+.elo_upcomming_calendar_block {
+    .calendar_event_user {
+        background-color: $white;
+        padding-left: 1rem;
+    }
+    .btn-secondary {
+        background-color: $color-4790CD;
+        color: $white;
+        border: 1px solid $color-4790CD;
+        display: block;
+    }
+}
+// *****************************Nhien elo Lich trinh hoc tap bang so 3**********
+.elo_course_activitive_table thead {
+	background: $color-table-thead;
+        overflow-y: scroll;
+	display:    block;
+	width:      100%;
+        font-size : 16px;
+        color:      $white;
+}
+.elo_course_activitive_table thead tr{
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.elo_course_activitive_table tbody {
+	max-height: 500px;
+	overflow-y: scroll;
+	display: block;
+	width: 100%;
+}
+.elo_course_activitive_table tbody tr {
+	display:table;
+	width:100%;
+	table-layout:fixed;
+}
+
+.elo_course_activitive_table td{
+        text-align: left;
+        }        
+ .elo_course_activitive_table th{
+        text-align: left;
+        }
+.elo_course_activitive_table td:nth-child(1){
+        width:40%;
+        float:left;
+}
+.elo_course_activitive_table th:nth-child(1){
+        width:40%;
+        float:left;
+}
+/*.elo_course_activitive_table td:nth-child(2){
+        width:20%;
+        float:left;
+}
+.elo_course_activitive_table th:nth-child(2){
+        width:20%;
+        float:left;
+}*/
+.elo_course_activitive_table td:nth-child(2){
+        width:40%;
+        float:left;
+}
+.elo_course_activitive_table th:nth-child(2){
+        width:40%;
+        float:left;
+}
+.elo_course_activitive_table td:nth-child(3){
+        width:20%;
+        float:left;
+        /*div{
+            text-align: left;
+        }*/
+}
+.elo_course_activitive_table th:nth-child(3){
+        width:20%;
+        float:left;
+        
+}
+
+.elo_course_activitive_table td, .elo_course_activitive_table th {
+    border: 1px solid $color-great-light-shade;
+    //padding: 8px;
+}
+
+.elo_course_activitive_table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.elo_course_activitive_table tr:hover {
+    background-color: rgba(0.5,0.5,0.5,0.1);
+    transition: all 0.3s ease 0.1s;
+}
+.fa-unsorted::before, .fa-sort::before {
+    content: "\f0dc";
+}
+.elo-admin-announcement-to-visitor {
+    margin-bottom:      20px;
+    border-radius:      4px;
+    -webkit-box-shadow: 0 0 5px  rgba(0,0,0,0.5);
+    box-sizing:         border-box;
+    border:             1px solid  $color-great-light-shade;
+    background-color:   $white;
+    box-shadow:         0 0 5px  rgba(0,0,0,0.5); 
+    display:            none;
+}
+.elo-dev-admin-announcement-to-visitor {
+    display:            block;
+    padding:            1rem;
+    height:             350px;
+    background-size:    cover;
+    
+}
+#region-main > .card {
+    overflow-x: auto;
+    overflow-y: visible;
+    min-height: 10rem;
+}
+//******************************Elo Login**************************************
+$maunen1 :              #0C1B3D !default;
+$maunen2:               $white  !default;
+
+$mauchu1:               $white  !default;
+$mauchu2:               #121C33 !default;
+
+$maubgform1:            rgba(5,19,47,.7) !default;
+$mautextform1:          #478FC7 !default;
+$maulink1:              #FF9100 !default;
+
+$maubgform2:            #F0F0F0 !default;
+$mautextform2:          #8C8C8C !default;
+$maulink2:              #29A4FF !default;
+
+$maubuttondangnhap:     #2B3990 !default;
+$maubuttonhocthu:       #D8881D !default;
+$mauborder:             #2C4D8F !default;
+$mauchuinput:           rgba(5,19,47,.7) !default;
+
+$mauhover:              #347CAD !default;
+$sans-serif-login:      'Roboto', sans-serif ;
+
+$primary-color-bg-login:                $maunen2;
+$primary-color-text-login:              $mauchu2;
+
+$primary-color-bg-form-login:           $maubgform2;
+$primary-color-placeholder-form-login:  $mautextform2;
+$primary-color-text-link-login:         $maulink2;
+
+$primary-font-login:                $sans-serif-login;
+$secondary-font-login:              $font-family-sans-serif !default;
+
+@mixin size-login($font-size, $line-height,$font-weight){
+    font-weight:    $font-weight;
+    line-height:    $line-height;
+    font-size:      $font-size;   
+}
+.input-form-login {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    border: none; 
+}
+#login-index-elo-card {
+    font-family: $secondary-font-login;
+    background: $primary-color-bg-login;
+    color: $primary-color-text-login;
+    @include border-radius(10px);
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $primary-color-placeholder-form-login;
+        opacity: 1; /* Firefox */
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $primary-color-placeholder-form-login;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $primary-color-placeholder-form-login;
+    }
+
+    .elotextlogin {
+        text-align: center;
+        @include size-login(16px, 21px,$font-weight-normal);
+    }
+    .input-group-username {
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        @include border-radius(10px);
+    }
+    .rememberpass {
+        @include size-login(14px, 16px,$font-weight-normal);
+    }
+    .form-control {
+        @include border-radius(10px);
+        @include size-login(14px, 16px,$font-weight-normal);
+        //border: 1px solid $mauborder;
+        border: none;
+        background: $primary-color-bg-form-login;
+        padding: 10px;
+    }
+    .btn-primary {
+        background: $maubuttondangnhap;
+        @include border-radius(10px);
+        @extend .input-form-login;
+        @include hover-focus{
+            background: $mauhover;
+        }
+    }
+    .btn-secondary {
+        background: $maubuttonhocthu;
+        color: $white;
+        @include border-radius(10px);
+        @extend .input-form-login;
+    }
+    button {
+        margin-bottom: 10px;
+        padding: 12px 0px;
+    }
+    .forgetpass {
+        text-align: center;
+        @include size-login(13px, 20px,$font-weight-normal);
+        background: $primary-color-bg-login;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        a {
+            color: $primary-color-text-link-login;
+            text-decoration: underline;
+            @include hover-focus {
+                color: $maulink1;
+            }
+        }    
+    }
+}
+.videodangnhapelo {
+    font-family: $secondary-font-login;
+    background: $primary-color-bg-login;
+    color : $primary-color-text-login;
+    @include border-radius(10px);
+    .textvideo {  
+        @include size-login(29px, 35px,$font-weight-bold);
+    }
+}
+.videovimeo {
+    width: calc(100%);
+    height: 359px;
+}
+//******************************END Elo login**************************************
+
+#login-forgot_password-elo-card-body p {
+    font-size: 20px;
+    text-align: center;
+}
+//**********************************Lịch Default*********************************
+
+
+.maincalendar .calendarmonth td, .maincalendar .calendarmonth th {
+    border: 1px solid $color-boder-calendar-default;
+}
+
+#calendar-view-elo-card-body {
+    font-size: 14px;
+    table{
+        -webkit-box-shadow: 0px 0px 5px 0px $color-boder-calendar-default;
+        -moz-box-shadow: 0px 0px 5px 0px $color-boder-calendar-default;
+        box-shadow: 0px 0px 5px 0px $color-boder-calendar-default;
+    }  
+    .btn-secondary {
+        display: block;
+        margin-top: 1rem;
+        background-color: $colorblue;
+        color: $white;
+        border: 1px solid $colorblue;
+        @include hover-focus {
+            background-color: $colorcyanblue; 
+        }
+    }
+    .maincalendar {
+        .calendartable thead tr th{
+            font-weight: bold;
+        }
+        .calendar-controls .current {
+            font-size: 20px;
+        }
+    }
+    .description.card-block.calendar_event_due, .description.card-block.calendar_event_close,
+    .description.card-block.calendar_event_expectcompletionon {
+        padding: 10px;
+        p, span {
+            background: none !important;
+        }
+        
+    }
+    
+}
+//************************************BLOCK*************************************
+
+.card-body {
+  // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+  // as much space as possible, ensuring footers are aligned to the bottom.
+    padding: 1.25rem 1rem;   
+    border: 1px solid $color-b9b9;
+}
+[data-region="myoverview"] {
+    border-left: 1px solid $color-b9b9;
+    border-right: 1px solid $color-b9b9; 
+    border-bottom: 1px solid $color-b9b9;  
+}
+#course-view-eloflexsections-elo-card {
+    border: none;
+}
+
+#course-view-eloflexsections-elo-card-body {
+      .nav-tabs {
+        border: 1px solid $color-navlink-course;
+        background-color: $white;
+      .nav-item {
+          &:hover {
+            color: #789;
+            cursor: pointer;
+          }
+      }
+      a {
+          color: #313131;
+          h4 {
+              font-size: 20px;
+          }
+      }
+      .nav-link {
+        border: $nav-tabs-border-width solid transparent;
+       
+        @include hover-focus {
+            color: #789;
+            cursor: pointer; 
+        }
+        &.disabled {
+          color: $nav-link-disabled-color;
+          background-color: transparent;
+          border-color: transparent;
+        }
+      }
+      .nav-link.active,
+      .nav-item.show .nav-link {
+        color: $color-table-thead;
+        border: 1px solid $color-navlink-course;
+        border-top: 3px solid $color-table-thead;
+        border-bottom: 1px solid $white;
+        background: $white;
+      } 
+    }
+    .tab-content {
+        border: 1px solid $color-navlink-course;
+        background: $white;
+         box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        -o-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+        padding-top: 20px;
+    }
+    .contentafterlink span {
+        background: none !important;
+    }
+}
+//***************************************style theme boost**********************
+.bg-white {
+    background-color: $color-navtop !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $white;
+}
+.block_myoverview .content-centred {
+    min-width: 93%;
+    margin-left: 32px;
+    margin-right: 24px;
+}
+.card-deck .card {
+    flex-basis: calc(34% - 41px);
+}
+.card-deck .myoverviewimg {
+    height: 250px;
+}
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+}
+//*************************** nav tab ******************************************
+.nav-tabs {
+    border-top:     1px solid $color-b9b9;
+    border-bottom:  5px solid $color-nav-link;
+    background-color: $color-great-light-shade;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    position: relative;
+    color: $black;
+    background-color: $color-nav-link;
+    border-color : $color-nav-link;
+    outline: none;
+    transition: all .5s;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    
+}
+#course-view-eloflexsections-elo-card-body {
+    padding: 0;
+    overflow: hidden;
+    .block-elo-content {
+        border: none;
+    }
+    #participantsform .no-overflow{
+        padding: 0 16px;
+    }
+    #participantsform .d-flex {
+        padding-left: 16px;
+    }
+    .pull-right {
+        padding-right: 16px;
+    }
+    h2 {
+        text-align: center;
+        margin-top: .5rem;
+    }
+    .form-autocomplete-selection {  
+        padding-left: 16px;
+    }
+    .form-autocomplete-selection + input.form-control {
+        margin-left: 16px;
+    }
+    .userlist {
+       p, .d-flex, nav, #showall{ padding-left: 16px !important};
+    }
+
+    .form-autocomplete-suggestions {  
+        margin-left: 16px;
+    }
+}
+
+#my-index-elo-card-body {
+    padding: 0;
+}
+/***************************************Collapse********************************/
+.collapse-default {
+    font-family: "FontAwesome";
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top:10px;
+    right: 0;
+}
+
+#accordion1, #accordion2, #accordion3, #accordion4 {
+    .panel-title a {
+        display: block;
+        color: $white;
+        outline : none;
+        font-weight: normal;
+        &:before {
+         content: '\f068';
+        @extend .collapse-default;
+        }
+    }
+    .panel-title a.collapsed:before { content: '\f067'; }
+}
+.paneltitle-rating {
+    a {
+        display: block;
+        color: $white;
+        outline : none;
+        font-weight: bold;
+        &:before {
+            content: '\f068';
+            font-family: "FontAwesome";
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            font-weight: 700;
+            position: absolute;
+            top: 3px;
+            right: 0;
+        }
+    }
+    a.collapsed:before { content: '\f067'; }
+}
+#mainfooterdiv1, #mainfooterdiv2, #mainfooterdiv3, #footerdiv1,#footerdiv2, #footerdiv3,#footerdiv4 {
+    .panel-tools button {
+    display: block;
+    &:before {
+        content: '\f068';
+        font-family: "FontAwesome";     
+    }
+    }
+    .panel-tools button.collapsed:before { content: '\f067'; }
+}
+
+#accordionmycourses {
+    [data-key="mycourses"] a {
+        display: block;
+        color: $black;
+        outline : none;
+        &:before {
+        content: '\f078';
+        @extend .collapse-default;
+        }
+    }
+    [data-key="mycourses"] a.collapsed:before { content: '\f054'; }
+}
+
+/************************************RESPONSIVE*************************************/
+@media screen and (min-width: 320px) and (max-width: 374px) {/*fix chart*/
+    .usertext-bg {
+        display: none;
+    }
+    .elo_charts_tabcontent {
+        height: 400px !important;
+    }
+    .fixbarchart {
+        width: 118% !important;
+        height: 79% !important;
+        right: 0 !important;
+        top: 20% !important;
+    }
+    .c100.big {
+        font-size: 170px !important;
+    }
+    .block-elo-content, [data-block="myoverview"], [data-block="myelostatistic"], 
+    [data-block="myeloworks"], [data-block="calendar_month"], [data-block="online_users"] {
+        ul {
+        padding: 0;
+        }
+    }
+    [data-region="timeline-view"] {
+        .nav-item {
+            width: 100%;
+            text-align: center;
+        }  
+    }
+    .grade-navigation {
+        ul {padding: 0;}
+        .nav-item {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .boxelo {     
+        border: none;
+        box-shadow: none;
+    }
+    
+    .elo_upcomming_calendar_block .btn-secondary {
+        width: 100%;
+    }
+    #user-profile-elo-card {
+        .d-flex {
+            display: block!important;
+        }
+        .singlebutton {
+            margin-bottom: 8px;
+            margin-left: 8px;
+        }
+    }
+    #my-index-elo-card {
+        .d-flex {
+            display: block!important;
+        }
+        .singlebutton {
+            margin-bottom: 8px;
+            margin-left: 8px;
+        }
+    }
+    .tilecontainer {
+        margin: 0;
+    }
+    // login mobile
+    .videodangnhapelo {
+        .textvideo {
+           font-size: 18px;  
+           line-height: 28px; 
+        }
+        .videovimeo {
+            height: 100%;
+        }
+    }
+    
+    #login-index-elo-card .elotextlogin {
+        font-size: 15px;
+    }
+    .fixform {
+        padding: 0;
+    }
+    #login-index-elo-card .card-body-elo {
+        padding: 0;
+    }
+    #login-index-elo-card .forgetpass {
+        font-size: 14px;
+    }
+    #login-index-elo-card button {
+        margin-bottom: 10px;
+    }
+    //end login mobile
+    #course-view-eloflexsections-elo-card-body .nav-tabs .nav-link.active,
+    #course-view-eloflexsections-elo-card-body .nav-tabs .nav-item.show .nav-link {
+        border: 3px solid #347cad;
+    }
+    .coursestyle2 {   
+        height: 250px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 424px) {/*fix chart*/
+    .usertext-bg {
+        display: none;
+    }
+    .elo_charts_tabcontent {
+        height: 400px !important;
+    }
+    .fixbarchart {
+        width: 116% !important;
+        height: 80% !important;
+        right: 0 !important;
+        top: 20% !important;
+    }
+    .block-elo-content, [data-block="myoverview"], [data-block="myelostatistic"], [data-block="myeloworks"], [data-block="calendar_month"], [data-block="online_users"] {
+        ul {
+        padding: 0;
+        }
+    }
+    [data-region="timeline-view"] {
+        .nav-item {
+            width: 100%;
+            text-align: center;
+        }  
+    }
+    .tilecontainer {
+        margin: 0;
+    }
+    #my-index-elo-card {
+        .d-flex {
+            display: block!important;
+        }
+        .singlebutton {
+            margin-bottom: 8px;
+            margin-left: 8px;
+        }
+    }
+    // login mobile
+    .videodangnhapelo {
+        .textvideo {
+           font-size: 21px;  
+           line-height: 28px; 
+        }
+        .videovimeo {
+           
+            height: 100%;
+        }
+    }
+    .loginelo {
+        display: block;
+        padding: 0;
+    }
+    #login-index-elo-card .card-headerelo {
+        padding: 20px 0 0px 0;
+    }
+    #login-index-elo-card .elotextlogin {
+        font-size: 14px; 
+    }
+    .fixform {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #login-index-elo-card button {
+        margin-bottom: 10px;
+    }
+    #login-index-elo-card .forgetpass {
+        font-size: 13px;
+    }
+    //end login mobile
+    #course-view-eloflexsections-elo-card-body .nav-tabs .nav-link.active,
+    #course-view-eloflexsections-elo-card-body .nav-tabs .nav-item.show .nav-link {
+        border: 3px solid #347cad;
+    }
+    .coursestyle2 {   
+        height: 275px;
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {/*fix chart*/
+    .usertext-bg {
+        display: none;
+    }
+    .elo_charts_tabcontent {
+        height: 400px !important;
+    }
+    .fixbarchart {
+        width: 105% !important;
+        height: 80%!important;
+        right: 0!important;
+        top: 21%!important;
+    }
+    .tilecontainer {
+        margin: 0;
+    }
+    .block-elo-content {
+        ul {padding: 0;}
+    }
+    // login mobile
+    .fixform {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .videodangnhapelo {
+        .textvideo {
+           font-size: 24px;  
+           line-height: 28px; 
+        }
+        .videovimeo {
+            
+            height: 250px;
+        }
+    }
+
+    #login-index-elo-card button {
+        margin-bottom: 10px;
+    }
+    //end login mobile
+    #course-view-eloflexsections-elo-card-body .nav-tabs .nav-link.active,
+    #course-view-eloflexsections-elo-card-body .nav-tabs .nav-item.show .nav-link {
+        border: 3px solid #347cad;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .elo_charts_tabcontent {
+        height: 400px !important;
+    }
+    .fixbarchart {
+        height: 79% !important;
+        right: -4px !important;
+
+    }
+    #page-header .logo img {
+        max-width: 60% !important;
+    }
+    .card-deck .card {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(50% - 30px);
+    }
+    .block_myoverview .content-centred {
+        min-width: 93%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .usermenu .login {
+        line-height: 20px !important;
+    }
+    /*.custom-select {
+        width: 50%;
+    }*/
+    .mform .form-inline .custom-select {
+        max-width: 100%;
+    }
+    .header.backto {
+        max-width: 49%;
+    }
+    /*table lich trinh hoc tap*/
+    .table thead th, table.collection thead th, table.flexible thead th, .generaltable thead th {
+        border: none;
+    }
+    .elo_course_activitive_table td, .elo_course_activitive_table th {
+        border: none;
+    }
+    .header.backto {
+        max-width: 50%  !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .coursestyle2 h3 { 
+        font-size: 12px;
+    }
+    .coursestyle2 {   
+        height: 250px;
+    }
+    .tilecontainer {
+        margin: 10px 0 10px 0;
+    }
+    .c100.big {
+        font-size: 160px !important;
+    }
+    .c100quat.big {
+        font-size: 100px !important;
+    }
+    // login mobile
+    .videodangnhapelo {
+        .textvideo {
+            font-size: 30px;  
+            line-height: 28px;
+        }
+    }
+    #login-index-elo-card {
+        .elotextlogin {
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 0;
+        }
+    }
+    //end login mobile
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .card-deck .card {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(50% - 30px);
+    }
+    .block_myoverview .content-centred {
+        min-width: 93%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    body#page-login-index {
+        background-size: auto;
+    }
+    .c100.big {
+        font-size: 155px !important;
+    }
+    .c100quat.big {
+        font-size: 83px !important;
+    }
+    .elo-course-dashboard-percent-text a {
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .fixbarchart {
+        height: 86% !important;
+        right: 0 !important;   
+    }
+     // login mobile
+    #login-index-elo-card .elotextlogin {  
+        font-size: 16px;  
+    }
+    //end login mobile
+    
+}
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    .elo-course-dashboard-percent-text a {
+        font-size: 16px;
+    }
+    .c100.big {
+        font-size: 165px !important;
+    }
+    .c100quat.big {
+        font-size: 90px !important;
+    }
+    .fixbarchart {
+        height: 85% !important;
+        right: 0 !important;   
+    }
+}
+@media screen and (max-width: 767px) {
+   
+    
+    .card-deck .card {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(50% - 30px);
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+    .mr-3, .mx-3 {
+        margin-right: 1% !important;
+    }
+    .mt-5, .my-5 {
+        margin: 1rem auto !important;
+    }
+    .block_myoverview .content-centred {
+        min-width: 93%;
+        margin: 0;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .card-block {
+        padding: .5rem;
+    }
+    /*fix font */
+    .page-context-header .page-header-headings h1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .path-calendar .maincalendar .calendar-controls .current {
+        font-size: 16px;
+    }
+    .elo-course-dashboard-percent-text a {
+        font-size: 16px;
+    }
+    .usermenu .login {
+        line-height: 10px;
+    }
+    /*fix avatar*/
+    .userpictureavatar {display:none;}
+    /*fix navtab*/
+    #course-view-eloflexsections-elo-card-body .nav-tabs .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /*login fontpage*/
+    .panel-title {
+        font-size: 16px !important;
+    }
+    .header.backto {
+        max-width: 100% !important;
+    }
+    /*fix noi dung mon hoc*/
+    .format-eloflexsections .course-content ul.eloflexsections li.section {    
+        margin: 5px 0;
+        padding: 5px 0;
+    }
+    format-eloflexsections .course-content ul.eloflexsections li.section ul.section {
+        padding: 5px 0;
+        margin: 5px 0;
+    }
+    .section .label .mod-indent-outer {
+        padding: 0;
+    }
+    .section .label .contentwithoutlink, .section .label .activityinstance {
+        padding: 0;
+    }
+    .section .activity .contentafterlink {
+        margin-left: 0px !important;
+    }
+    .format-eloflexsections .course-content ul.eloflexsections li.section .availabilityinfo {
+        padding-left: 0px;   
+    }
+    #course-view-eloflexsections-elo-card-body .no-overflow {
+        padding: 0 2px;
+    }
+    .format-eloflexsections .course-content ul.eloflexsections li.section ul.section {
+        margin: 0;
+        padding: 0;
+    }
+    .eloflexsections.eloflexsections-level-1 {
+        padding: 0;
+    }
+     /*fix table lich trinh hoc tap*/
+    .table thead th, table.collection thead th, table.flexible thead th, .generaltable thead th {
+        border: none;
+    }
+    .elo_course_activitive_table td, .elo_course_activitive_table th {
+        border: none;
+    }
+    [data-region="myoverview"] {
+        border: none;
+    }
+     /*fix header*/
+    .withimage {
+            height: calc(100%) !important;
+    }
+    .customimage {height: 259px !important;}
+    /*fix Lich trinh hoc tap*/
+    
+    #course-view-eloflexsections-elo-card-body .pull-right {
+        margin-top: 3px;
+    }
+    
+    .eloheightcontainer .calendar-controls .current {
+        font-size: 20px !important;
+    }
+    
+    .elo_charts_tab button {
+        width: 100%;
+    }
+    #page-header .logo img {
+        max-width: 80%;   
+    }
+    
+    #top-footer {
+        .panelfooter { 
+            border-bottom: 1px solid $white;
+        }
+    } 
+    #course-view-eloflexsections-elo-card-body .nav-tabs {
+        margin: 0;    
+    }
+    #mod-forum-view-elo-card-body {
+        border-radius: 0px;
+        border: none;
+        box-shadow: none;
+        background-color: $white;
+    }
+    .section .activity .actions {
+        right: -13px;
+    }
+    .section.img-text {
+        border: none;
+        background: transparent !important;
+    }
+    .coursebox .content .teachers {
+        width: 100%;
+    }
+    .coursebox .content .summary {
+        width: 100%; 
+    }
+    
+}
+// an home navigation
+[data-key="home"],[data-key="competencies"], [data-key="privatefiles"] {
+    display: none;
+}
+[data-block="myoverview"] {
+    border: none;
+}
+[data-block="myelostatistic"] {
+    border: none;
+}
+#report-eloprogress-index-elo-card-body {
+    font-size: 14px;
+    font-family: $font-family-sans-serif;
+}
+#report-progress-index-elo-card-body {
+    .generaltable thead tr{
+        background: $colorlightgrey;
+        border: none;
+        color: $colorblue;
+    }
+    .generaltable thead a{
+        background: $colorlightgrey;
+        color: $colorblue;
+    }
+    .generaltable thead tr th{
+        color: $colorblue;
+    }
+}
+    .list-group-item.active {
+        background-color: $colorblue;
+        border-color: $colorblue;
+    }
+    .nav-pills .nav-link.active {
+        background-color: $colorblue;
+    }
+@media screen and (max-width: 768px) {
+    .card-body {
+        padding: .5rem;
+    }
+    .navbar-nav {
+        padding-right: 0px !important;
+    }
+    img.userpicture {
+        margin-right: 0rem;
+    }
+}
+
+#mod-quiz-attempt-elo-card-body {
+    span {
+        font-family: $font-family-sans-serif !important;
+        font-weight: normal !important;
+    }
+    .qno {
+        font-weight: bold !important;
+    }
+    .form-inline-thaoheo {
+        flex-flow: row wrap;
+        align-items: center;
+        display: inline-flex !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .videodangnhapelo {
+        margin-bottom: 20px;
+    }
+    .fixform {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .searchmobile {
+        padding: 4px;
+        background: $white;
+    }
+    .searchnav {
+        width: calc(80% - 50px);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .showbuttonsearchnav {
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
+    .fixpage {
+        margin-top: 85px !important;
+    }
+    .fixnav-drawer{
+        padding-top: 50px !important;
+    }
+}
+@media screen and (max-width: 1023px) {
+    body#page-login-index { 
+        background-size: auto;
+    }
+}
+.form-inline-thaoheo {
+    display: block !important;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+

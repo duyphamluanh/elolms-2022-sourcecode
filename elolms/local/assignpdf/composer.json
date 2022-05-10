@@ -1,0 +1,18 @@
+{
+    "name": "toandt/moodle-local_assignpdf",
+    "description": "A block template for Moodle based on http://docs.moodle.org/dev/Blocks",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Eloteam",
+            "email": "duy.pham@oude.edu.vn"
+        }
+    ],
+    "type": "moodle-local",
+    "require": {
+      "composer/installers": "~1.0"
+    },
+    "extra": {
+      "installer-name": "assignpdf"
+    }
+}

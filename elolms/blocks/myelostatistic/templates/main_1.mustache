@@ -1,0 +1,281 @@
+ {{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template block_myelostatistic/main
+
+    This template renders the main content area for the myelostatistic block.
+
+    Example context (json):
+    {}
+}}
+
+{{!
+    Nhien Clone Khoi Nay
+}}
+<div id="page-wrapper-elo">
+<link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/blocks/myelostatistic/styles_circle_chart_elo.css">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-xl-6 fixform">
+                <div class="boxelo">
+                    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                            <div class="panel with-border">         
+                                <h3 class="panel-title">
+                                    <a role="button" data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                            <i class="fa fa-pie-chart fa-fw"></i> {{#str}} completeyourstatistics:overview, block_myelostatistic {{/str}}
+                                    </a>
+                                </h3>   
+                            </div>
+                        <div id="collapse1" class="panel-collapse collapse show" role="tabpanel">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                                        <div class="d-inline-block d-lg-inline-block">
+                                            <div class="c100 p{{{coursesview.elocoursespercent}}} big" style = "font-size: 220px">
+                                            <span> 
+                                                <div class="completion-word">{{#str}} completeelo:overview, block_myelostatistic {{/str}}</div>
+                                                <div class="completion-percent">{{{coursesview.elocoursespercent}}}%</div>
+                                                <div class="completion-word">{{#str}} ofcources:overview, block_myelostatistic {{/str}}</div>
+                                            </span>
+                                            <div class="slice">
+                                                <div class="bar"></div>
+                                                <div class="fill"></div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                                        <div class="d-inline-block d-lg-inline-block">
+                                            <div class="c100 p100 big" style = "font-size: 220px">
+                                                <span> 
+                                                    <div class="completion-word">{{#str}} rankingelo:overview, block_myelostatistic {{/str}}</div>
+                                                    <div class="completion-percent">{{{coursesview.elomylevel}}}</div>
+                                                    <div class="completion-word">{{#str}} courseselo:overview, block_myelostatistic {{/str}}</div>
+                                                </span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                </div>                                    
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-xl-6 fixform">
+                <div class="boxelo">
+                    <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                        <div class="panel with-border">         
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                    <i class="fa fa-clock-o fa-fw"></i> {{#str}} compare:overview, block_myelostatistic {{/str}}
+                                </a>
+                            </h3>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse show" role="tabpanel">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                                        <div class="d-inline-block d-lg-inline-block">
+                                            <div class="c100quat p{{{coursesview.eloavgprogress}}} big" style = "font-size: 116px">
+                                                <span> 
+                                                    <div class="completion-word">{{#str}} completeelo:overview, block_myelostatistic {{/str}}</div>
+                                                    <div class="completion-percent">{{{coursesview.eloavgprogress}}}%</div>
+                                                    <div class="completion-word">{{#str}} ofcources:overview, block_myelostatistic {{/str}}</div>
+                                                </span>
+                                                <div class="slice">
+                                                    <div class="bar"></div>
+                                                    <div class="fill"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-block">{{#str}} average:overview, block_myelostatistic {{/str}}</div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                                            <div class="d-inline-block d-lg-inline-block">
+                                                    <div class="c100quat p{{{coursesview.elomaxprogress}}} big" style = "font-size:116px">
+                                                        <span> 
+                                                            <div class="completion-word">{{#str}} completeelo:overview, block_myelostatistic {{/str}}</div>
+                                                            <div class="completion-percent">{{{coursesview.elomaxprogress}}}%</div>
+                                                            <div class="completion-word">{{#str}} ofcources:overview, block_myelostatistic {{/str}}</div>
+                                                        </span>
+                                                        <div class="slice">
+                                                            <div class="bar"></div>
+                                                            <div class="fill"></div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <div class="d-block">{{#str}} firstclass:overview, block_myelostatistic {{/str}}</div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+                                            <div class="d-inline-block d-lg-inline-block">
+                                                <div class="c100quat p{{{coursesview.elominprogress}}} big" style = "font-size: 116px">
+                                                    <span> 
+                                                        <div class="completion-word">{{#str}} completeelo:overview, block_myelostatistic {{/str}}</div>
+                                                        <div class="completion-percent">{{{coursesview.elominprogress}}}%</div>
+                                                        <div class="completion-word">{{#str}} ofcources:overview, block_myelostatistic {{/str}}</div>
+                                                    </span>
+                                                    <div class="slice">
+                                                        <div class="bar"></div>
+                                                        <div class="fill"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-block">{{#str}} lowestcomplete:overview, block_myelostatistic {{/str}}</div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="panel-footer">   
+                                {{#str}} textfooter-compare:myelostatistic, block_myelostatistic {{/str}}{{{coursesview.elomylevel}}}{{#str}} text2footer-compare:myelostatistic, block_myelostatistic {{/str}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+{{!********************************************DIV2******************************************************************************}}
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-xl-3 fixform">
+            <div class="boxelo">
+                <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                    <div class="panel with-border">         
+                        <h3 class="panel-title">
+                            <a role="button" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                <i class="fa fa-check-square-o fa-fw"></i> {{#str}} completed:overview, block_myelostatistic {{/str}}
+                            </a> 
+                        </h3>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse show" role="tabpanel">
+                        <div class="panel-body fixdiv2left">
+                            <table class="table table-striped" >
+                                <tbody>
+                                   {{{coursesview.elocompletedhtml}}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxelo">
+                <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                    <div class="panel with-border">         
+                        <h3 class="panel-title">
+                            <a role="button" data-toggle="collapse" href="#collapsenotcompleted" aria-expanded="true" aria-controls="collapse3">
+                                <i class="fa fa-times fa-fw"></i> {{#str}} incomplete:overview, block_myelostatistic {{/str}}
+                            </a>
+                        </h3>
+                    </div>
+                    <div id="collapsenotcompleted" class="panel-collapse collapse show" role="tabpanel">
+                        <div class="panel-body fixdiv2left">
+                            <table class="table table-striped" >
+                                <tbody>
+                                   {{{coursesview.elonotcompletedhtml}}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-xl-9 fixform">
+            <div class="boxelo">
+                <div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
+                    <div class="panel with-border">         
+                        <h3 class="panel-title">
+                            <a role="button" data-toggle="collapse" href="#collapseelopointcharthtml" aria-expanded="true" aria-controls="collapseelopointcharthtml">
+                                <i class="fa fa fa-area-chart fa-fw"></i> {{#str}} gradeavgchart:overview, block_myelostatistic {{/str}}
+                            </a> 
+                        </h3>
+                    </div>
+                    <div id="collapseelopointcharthtml" class="panel-collapse collapse show" role="tabpanel">
+                        <div class="elo-charts-panel-body">
+                        {{{coursesview.elopointcharthtml}}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{!*****************************************DIV 3****************************************************}}
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-xl-3 fixform">
+            <div class="boxelo panel-padding">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <i class="fa fa-clock-o fa-3x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">{{{coursesview.eloonlinehourcount}}}</div>
+                    <div class="font-weight-bold">{{#str}} onlinetime:overview, block_myelostatistic {{/str}}</div>
+                  </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-xl-3 fixform">
+            <div class="boxelo panel-padding">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                          <i class="fa fa-play fa-3x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{{coursesview.elonumbervideo}}}</div>
+                            <div class="font-weight-bold">{{#str}} watchedvideo:overview, block_myelostatistic {{/str}}</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-xl-3 fixform">
+            <div class="boxelo panel-padding">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-3">
+                          <i class="fa fa-book fa-3x"></i>
+                        </div>
+                        <div class="col-xs-9 text-right">
+                            <div class="huge">{{{coursesview.elodiscussioncount}}}</div>
+                            <div class="font-weight-bold">{{#str}} forumdiscussion:overview, block_myelostatistic {{/str}}</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-xl-3 fixform">
+        <div class="boxelo panel-padding">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                      <i class="fa fa-comments fa-3x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                      <div class="huge">{{{coursesview.elopostcount}}}</div>
+                      <div class="font-weight-bold">{{#str}} topicpostforum:overview, block_myelostatistic {{/str}}</div>
+                    </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,172 @@
+<div class="fpwonderbox">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+
+        {{#hasfpiconnav}}
+
+                <div class="fpstartwrap">
+                <div class="fpstart">
+                    <div class="iconset">
+
+                        {{#fpiconnav}}
+                            {{#hasicon}}
+                            <div class="btn btn-secondary">
+                                <a role="button" href = {{{link}}} title = "{{{link}}}" alt="{{{link}}}">
+                                    <div class="navicon" align="center">
+                                        <i class="fa fa-3x fa-{{{linkicon}}}"></i>
+                                    </div>
+                                    {{{linktext}}}
+                                </a>
+                            </div>
+                            {{/hasicon}}
+                        {{/fpiconnav}}
+
+                        {{#fpslideicon}}
+                            {{#hasicon}}
+                                <div class="btn btn-secondary">
+                                    <a role="button" data-toggle="collapse" href="#fpslider" aria-expanded="false" aria-controls="fpslider">
+                                        <div class="navicon" align="center">
+                                            <i class="fa fa-3x fa-{{{linkicon}}}"></i>
+                                        </div>
+                                        {{{linktext}}}
+                                    </a>
+                                </div>
+                            {{/hasicon}}
+                        {{/fpslideicon}}
+
+                        {{#fpcreateicon}}
+                            {{#hasicon}}
+                                <div class="btn btn-secondary createacourse">
+                                    <a role="button" href = {{{link}}} title = "{{{link}}}" alt="{{{link}}}">
+                                        <div class="navicon" align="center">
+                                            <i class="fa fa-3x fa-{{{linkicon}}}"></i>
+                                        </div>
+                                        {{{linktext}}}
+                                    </a>
+                                </div>
+                            {{/hasicon}}
+                        {{/fpcreateicon}}
+                        
+                    </div>
+                </div>
+                </div>
+
+                {{#hasslidetextbox}}
+                    <div class="collapse" id="fpslider">
+                        {{{slidetextbox}}}
+                    </div>
+                {{/hasslidetextbox}}
+                <div style="clear:both;"></div>
+
+        {{/hasfpiconnav}}
+
+        {{#hasalert}}
+            <div class="alertbox">
+                <div class="alertmessage">
+                {{{alertbox}}}
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+        {{/hasalert}}
+
+        {{#hasfptextbox}}
+                <div class="fptextbox">
+                    {{{fptextbox}}}
+                </div>
+        <div style="clear:both;"></div>
+        {{/hasfptextbox}}
+</div>
+</div>
+</div>
+
+{{#hasfptextboxlogout}}
+<div class="container-fluid">
+    <div class="row">
+   
+           
+    {{#hasshowloginform}}
+            
+            <div class="col-md-4">
+                <div class="panelelo-login panel-blue-login">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{#str}}fpsignup, theme_ouelofordson{{/str}}</h3>
+                    </div>
+                    <div class="panel-body-login">
+                        <form action="{{{ config.wwwroot }}}/login/index.php" method="POST" role="form">
+                            <label for="username">
+                              {{^canloginbyemail}}
+                                  {{#str}}username{{/str}}
+                              {{/canloginbyemail}}
+                              {{#canloginbyemail}}
+                                  {{#str}}usernameemail{{/str}}
+                              {{/canloginbyemail}}
+                            </label>
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                              
+                              <input type="text" class="form-control" id="username" name="username" placeholder="{{#str}}username{{/str}}" required />
+                            </div>
+
+                            <label for="password"> {{#str}}password{{/str}}</label>
+                            <div class="input-group">
+                              <div class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></div>
+                              
+                              <input type="password" class="form-control" id="password" name="password" placeholder="{{#str}}password{{/str}}" required />
+                            </div>
+
+                            <div class="sign-up-btn">
+                                <button type="submit" class="btn btn-primary">{{#str}}login{{/str}}</button>
+                            </div>
+                        </form>
+                        <div class="forgetpass">                          
+                            <p>{{#str}}elonotification{{/str}}<a href="{{{ config.wwwroot }}}/login/forgot_password.php">{{#str}}forgotten{{/str}}</a></p>
+                        </div>
+                        {{#cansignup}}
+                            <a class="btn btn-register btn-primary" href="{{{ config.wwwroot }}}/login/signup.php?">{{#str}}newaccount{{/str}}</a>
+                        {{/cansignup}}
+                    </div>
+                </div>
+            </div>
+            {{/hasshowloginform}}
+             <div class="col-md-8">
+                <div class="elo-admin-announcement-to-visitor">
+                {{{fptextboxlogout}}}
+                <div class="elo-dev-admin-announcement-to-visitor" style = "background-image: url('theme/ouelofordson/pix/dev_annoucement.png');">
+                </div> 
+                </div>
+            </div>
+    </div>
+    
+    </div>
+    <div style="clear:both;"></div>
+{{/hasfptextboxlogout}}
+
+{{#hasmarkettiles}}
+<div class="markettiles">
+    <div class="container-fluid">
+    <div class="row">
+
+        {{#markettiles}}
+        {{#hastile}}
+
+        <div class="col-md-4">
+        <div class="market-tile"> 
+            <h3 class="card-title">{{{title}}}</h3>
+            <div class="marketcontent {{{tileimage}}}">
+            <p>{{{content}}}<p>
+            </div>
+            {{{button}}} 
+        </div>
+        </div>
+
+        {{/hastile}}
+        {{/markettiles}}
+
+    </div>
+    </div>
+</div>
+<div style="clear:both;"></div>
+{{/hasmarkettiles}}
+
+</div>
